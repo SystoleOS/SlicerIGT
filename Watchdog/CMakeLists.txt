@@ -1,3 +1,4 @@
+find_package(Qt5 REQUIRED COMPONENTS Multimedia)
 
 #-----------------------------------------------------------------------------
 set(MODULE_NAME "Watchdog")
@@ -44,6 +45,8 @@ set(MODULE_TARGET_LIBRARIES
   MRMLLogic
   MRMLDisplayableManager
   qSlicerBaseQTCore
+  Qt5::Multimedia
+  ${CTK_LIBRARIES}
   )
 
 set(MODULE_RESOURCES

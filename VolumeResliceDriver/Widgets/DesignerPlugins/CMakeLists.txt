@@ -21,7 +21,7 @@ set(${KIT}_TARGET_LIBRARIES
 #-----------------------------------------------------------------------------
 # Designer plugins have to be installed at the some location as other
 # Slicer core designer plugins
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${Slicer_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/bin)
 
 ctkMacroBuildQtDesignerPlugin(
   NAME ${KIT}

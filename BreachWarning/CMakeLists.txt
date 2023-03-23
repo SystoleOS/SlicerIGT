@@ -1,3 +1,4 @@
+find_package(Qt5 REQUIRED COMPONENTS Multimedia)
 
 #-----------------------------------------------------------------------------
 set(MODULE_NAME "BreachWarning") # Do not use 'project()'
@@ -37,6 +38,9 @@ set(MODULE_UI_SRCS
 set(MODULE_TARGET_LIBRARIES
   vtkSlicer${MODULE_NAME}ModuleMRML
   vtkSlicer${MODULE_NAME}ModuleLogic
+  Qt5::Multimedia
+  ${CTK_LIBRARIES}
+  qMRMLWidgets
   )
 
 set(MODULE_RESOURCES
@@ -44,7 +48,7 @@ set(MODULE_RESOURCES
   )
 
 #-----------------------------------------------------------------------------
-slicerMacroBuildQtModule(
+slicerMacroBuildLoadableModule(
   NAME ${MODULE_NAME}
   TITLE ${MODULE_TITLE}
   EXPORT_DIRECTIVE ${MODULE_EXPORT_DIRECTIVE}

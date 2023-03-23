@@ -52,6 +52,8 @@ set(MODULE_TARGET_LIBRARIES
   vtkVolumeReconstruction
   vtkSlicerIGSIOCommon
   vtkSlicerSequencesModuleMRML
+  qMRMLWidgets
+  ${CTK_LIBRARIES}
   )
 
 set(MODULE_RESOURCES

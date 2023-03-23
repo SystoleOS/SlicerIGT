@@ -28,6 +28,8 @@ set(${KIT}_TARGET_LIBRARIES
   vtkSlicer${MODULE_NAME}ModuleMRML
   vtkSlicer${MODULE_NAME}ModuleLogic
   qSlicerMarkupsModuleWidgets
+  qMRMLWidgets
+  ${Slicer_Base_LIBRARIES}
   )
 
 #-----------------------------------------------------------------------------
